@@ -62,7 +62,6 @@ img {
   padding: 0 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: 1px solid tomato;
 }
 
 .visually-hidden {
@@ -410,6 +409,7 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  margin: 20px 24px 4px;
 
   letter-spacing: 0.06em;
 
@@ -419,6 +419,7 @@ img {
 .hero-portfolio-text {
   font-size: 16px;
   line-height: 1.88;
+  margin: 0 24px 20px;
 
   color: #757575;
 }
