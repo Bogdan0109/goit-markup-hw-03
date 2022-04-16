@@ -1,2 +1,2 @@
-# goit-markup-hw-03
-Модуль 3. Блокова модель. Flexbox.
+# goit-markup-hw-02
+Модуль 2. Основи CSS.
