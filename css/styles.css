@@ -40,6 +40,7 @@ ol {
 
 button {
   cursor: pointer;
+  text-align: center;
 }
 
 img {
@@ -59,7 +60,8 @@ img {
 .conteiner {
   width: 1200px;
   padding: 0 15px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   outline: 1px solid tomato;
 }
 
@@ -81,6 +83,7 @@ img {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border: 1px solid #ececec;
 }
 
 .header .conteiner {
@@ -162,20 +165,32 @@ img {
 
 /* -----------------------------------INDEX.MAIN------------------------------------ */
 
+/* ----------------------------------SECTION.HERO------------------------------------- */
+
 .hero {
   background-color: var(--background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
+  max-width: 696px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
+  margin-bottom: 30px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 
   color: #ffffff;
+}
+
+.hero-btn-div {
+  display: flex;
+  justify-content: center;
 }
 
 .hero-btn {
@@ -184,10 +199,10 @@ img {
   font-size: 16px;
   line-height: 1.88;
 
-  display: flex;
-  align-items: center;
-  text-align: center;
+  padding: 10px 32px;
+  min-width: 200px;
   letter-spacing: 0.06em;
+  border-radius: 4px;
 
   color: #ffffff;
   background-color: #2196f3;
@@ -198,11 +213,29 @@ img {
   background-color: #188ce8;
 }
 
+/* ----------------------------------SECTION.FEATURES------------------------------ */
+
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 
   color: var(--title-color);
 }
@@ -214,28 +247,65 @@ img {
   color: #757575;
 }
 
+/* ----------------------------------SECTION.OCCUPATION------------------------------- */
+
+.occupation {
+  padding-bottom: 94px;
+}
+
 .occupation-title,
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 
   color: var(--title-color);
 }
 
+.occupation-list {
+  display: flex;
+}
+
+.occupation-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* ----------------------------------SECTION.TEAM-------------------------------------- */
+
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: #f5f4fa;
 }
 
+.team-list {
+  display: flex;
+}
+
 .team-list > .team-item {
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+
   background-color: #ffffff;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-img {
+  margin-bottom: 30px;
 }
 
 .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+
+  margin-bottom: 10px;
 
   color: var(--title-color);
 }
@@ -244,13 +314,21 @@ img {
   font-size: 16px;
   line-height: 1.19;
 
+  margin-bottom: 30px;
+
   color: #757575;
 }
 
 /* -----------------INDEX-----------PORTFOLIO------------FOOTER------------------------------------ */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--background-color);
+}
+
+.footer-logo-div {
+  margin-bottom: 20px;
 }
 
 .footer-list {
@@ -277,12 +355,29 @@ img {
   color: var(--header-list-address-hover-color);
 }
 
+.hero-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.hero-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.hero-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .hero-portfolio-btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
 
+  padding: 6px 22px;
   line-height: 1.63;
+  border-radius: 4px;
 
   color: #212121;
   background-color: #f5f4fa;
@@ -294,8 +389,21 @@ img {
   background-color: #2196f3;
 }
 
+.hero-portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .hero-portfolio-list > .hero-portfolio-item {
   background-color: #eeeeee;
+}
+
+.hero-portfolio-item {
+  margin-bottom: 30px;
+}
+
+.hero-portfolio-item:not(:nth-child(3n)) {
+  margin-right: 30px;
 }
 
 .hero-portfolio-title {
