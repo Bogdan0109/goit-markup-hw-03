@@ -39,6 +39,7 @@ ol {
 }
 
 button {
+  display: block;
   cursor: pointer;
   text-align: center;
 }
