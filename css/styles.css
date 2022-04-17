@@ -194,7 +194,6 @@ img {
 }
 
 .hero-btn {
-  display: block;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -409,6 +408,10 @@ img {
 
 .hero-portfolio-item:not(:nth-child(3n)) {
   margin-right: 30px;
+}
+
+.hero-portfolio-div {
+  border: 1px solid #eeeeee;
 }
 
 .hero-portfolio-title {
