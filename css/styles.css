@@ -303,8 +303,9 @@ img {
   margin-right: 30px;
 }
 
-.team-img {
-  margin-bottom: 30px;
+.team-section-div {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-name {
@@ -320,8 +321,6 @@ img {
 .team-text {
   font-size: 16px;
   line-height: 1.19;
-
-  margin-bottom: 30px;
 
   color: #757575;
 }
@@ -340,6 +339,10 @@ img {
 
 .footer-list {
   font-style: normal;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-maps {
@@ -406,7 +409,7 @@ img {
   background-color: #eeeeee;
 }
 
-.hero-portfolio-item {
+.hero-portfolio-item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
 
@@ -417,13 +420,14 @@ img {
 .hero-portfolio-div {
   background-color: #ffffff;
   border: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
 
 .hero-portfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  margin: 20px 24px 4px;
+  margin-bottom: 4px;
 
   letter-spacing: 0.06em;
 
@@ -433,7 +437,6 @@ img {
 .hero-portfolio-text {
   font-size: 16px;
   line-height: 1.88;
-  margin: 0 24px 20px;
 
   color: #757575;
 }
