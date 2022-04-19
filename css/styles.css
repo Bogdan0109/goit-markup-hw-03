@@ -333,7 +333,8 @@ img {
   background-color: var(--background-color);
 }
 
-.footer-logo-div {
+.footer-logo {
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -420,6 +421,7 @@ img {
 .hero-portfolio-div {
   background-color: #ffffff;
   border: 1px solid #eeeeee;
+  border-top: none;
   padding: 20px 24px;
 }
 
